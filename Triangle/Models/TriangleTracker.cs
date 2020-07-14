@@ -20,6 +20,10 @@ namespace TriangleTracker
       {
         return "scalene";
       }
+      else if (side1 == side2 || side1 == side3 || side2 == side3)
+      {
+        return "isosceles";
+      }
       else 
       {
         return "not a triangle";
