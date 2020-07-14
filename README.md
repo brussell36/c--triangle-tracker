@@ -1,4 +1,4 @@
-# Ping Pong
+# Triangle Tracker
 
 #### C# practice for Epicodus, 07.14.2020
 
@@ -6,20 +6,15 @@
 
 ## Description
 
-Create an app that will replace numbers with ping, pong or ping-pong depending on what numbers they are divisible by.
+Create an app that will check 3 user input numbers to make sure that they can be a triangle then return what type of triangle they would be.
 
 ## Setup/Installation Requirements
 
-| Steps | Example |
-| -------- | ----- |
-|  1. Follow this [link to the project repository](https://github.com/brussell36/c--triangle-tracker) on GitHub.   |    |    
-|  2. Click on the "Clone or download" button to copy the project link.   |   ![Image of GitHub Clone or download button](img/readme/clone-download-button.PNG)   |   
-|  3. If you are comfortable with the command line, you can copy the project link and clone it through your commad line with the command `git clone`. Then run the command `npm install` followed by `npm run build`. Otherwise, I recommend choosing "**Download ZIP**".   |   ![Download ZIP option on GitHub](img/readme/download-zip.PNG)  |   
-|   4. Once the ZIP file has finished downloading, you can right click on the file to view the zip folder in your downloads.   |   ![ZIP folder in downloads](img/readme/zip-folder.PNG)  |   
-|  5. Right click on the project ZIP folder that you have just downloaded and choose the option "**Copy To...**", then choose the location where you would like to save this folder.    |   ![Saving ZIP to new location with 'Copy To'](img/readme/copy-to.PNG)  |   
-|  6. Navigate to the final location where you have chosen to save the project folder.   |     |   
-|  7. To view the code itself, right click, choose "open with..." and open using a text editor such as VS Code or Atom, etc.   |     |
-
+1. Clone this repository from GitHub.
+2. Open the downloaded directory in a text editor of your choice. (VSCode, Atom, etc.)
+3. Install [.Net Core](https://dotnet.microsoft.com/download/dotnet-core/2.2) 
+4. To install the REPL dotnet script, run dotnet tool install -g dotnet-script in your terminal.
+5. Run the program with the command dotnet build.
 
 #### Additional Setup/Installation Notes:
 
@@ -35,13 +30,13 @@ Create an app that will replace numbers with ping, pong or ping-pong depending o
 | 2. Will determine if the 3 numbers are equal | 2,2,2 | Equilateral | N |
 | 3. Will check to see if only 2 sides are equal | 2,2,4 | Isosceles | N |
 | 4. Will check if the 3 sides are not equal | 2,3,4 | Scalene | N |
-| 5. A user enters 3 number and the program will return not a triangle | 15 | N |
+| 5. A user enters 3 numbers and the program will return not a triangle | 15 | N |
 
 ## Known Bugs
 
 | Bug | Resolved (Y/N) |  How was the issue resolved?  |
 | ------- | ----- | ------ | ------ | --------- |
-| 15 is replaced with ping instead of pong | N | Placed condition for numbers divisible by 3 AND numbers divisible by 5 first in branching logic |
+|  |  |  |
 
 
 ## Support and contact details
