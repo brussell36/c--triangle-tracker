@@ -2,24 +2,12 @@ namespace TriangleTracker
 {
   public class Triangle
   {
-    public bool IsTriangle(int side1, int side2, int side3)
+    public string CheckTriangle(int side1, int side2, int side3)
     {
       if ((side1  > side2 + side3) || (side2 > side1 + side3) || (side3 > side1 + side2))
       {
-      return false;
-      }
-      else 
-      {
-        return true;
-      }
-    }
-
-    public string CheckTriangle(int side1, int side2, int side3)
-    {
-      if(side1 != side2 && side1 != side3 && side2 != side3)
-      {
-        return "scalene";
-      }
+        return "not a triangle";
+      }      
       else if (side1 == side2 && side2 == side3)
       {
         return "equilateral";
@@ -30,7 +18,7 @@ namespace TriangleTracker
       }
       else 
       {
-        return "not a triangle";
+        return "scalene";
       }
     }
   }

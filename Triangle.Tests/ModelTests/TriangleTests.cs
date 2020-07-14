@@ -7,10 +7,10 @@ namespace TriangleTracker.Tests
   public class TriangleTrackerTests
   {
     [TestMethod]
-    public void IsTriangle_SidesCanBeTriangle_True()
+    public void CheckTriangle_SidesCanBeTriangle_True()
     {
       Triangle testTriangle = new Triangle();
-      Assert.AreEqual(true, testTriangle.IsTriangle(2, 2, 2));
+      Assert.AreEqual("not a triangle", testTriangle.CheckTriangle(2, 2, 22));
     }
 
     [TestMethod]
